@@ -13,6 +13,8 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/dataTables.bootstrap4.min.css">
     <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+
     
 
   <meta name="description" content="Responsive Bootstrap 5 Admin &amp; Dashboard Template">
@@ -76,7 +78,35 @@
     <td>Mexico</td>
   </tr>
 </table>
+
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "Lexarking747!";
+$dbname = "myDB";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "SELECT id, firstname, lastname FROM MyGuests";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+  // output data of each row
+  while($row = $result->fetch_assoc()) {
+    echo "id: " . $row["StaffID"]. " - Name: " . $row["StaffName"]. " " . $row["StaffPosition"]. "<br>";
+  }
+} else {
+  echo "0 results";
+}
+$conn->close();
+?>
       
+
     </main>
     
     <script src="js/app.js"></script>
