@@ -9,7 +9,6 @@
     <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.23/js/dataTables.bootstrap4.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
-
   <body>
     <div class ="header">
       <div class ="logo">
@@ -28,11 +27,15 @@
     <main>
       <!--Section 1-->
       <div class="sec1">
+        <row class="row1">
+          <h2>Staff Data</h2>
+        </row>
+        <row class="row2">
         <table class="table1">
           <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Position</th>
+            <th>StaffID</th>
+            <th>StaffName</th>
+            <th>StaffPosition</th>
           </tr>
           <tr>
             <td>001</td>
@@ -50,7 +53,8 @@
             <td>Photographer</td>
           </tr>
         </table>
-      </div>
+      </row>
+    </div>
       <!--Section 2-->
       <div class="sec1">
         <div class="col1">
@@ -83,7 +87,6 @@
       </container>
     </footer>
   </body>
-
   <style>
     body {
      background: #F9F9F9;
@@ -128,11 +131,11 @@
     }
     .sec1, .sec2, .sec3{
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    align-content:center;
-    justify-content: space-around;
+    align-content: space-around;
+    justify-content: center;
     height: 400px;
     border-bottom: 1px solid #C9C9C9;
     }
@@ -145,6 +148,11 @@
     border: 1px solid #C9C9C9;
     transition: transform 250ms;
     }
+    .row1, .row2, .row3{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
     .col1:hover{
     transform: translateY(-10px);
     transition: transform 250ms;
@@ -152,13 +160,12 @@
     }
     .table1{
     border-collapse: collapse;
-    margin: 25px 0;
     font-size: 0.9em;
-    width: 100%;
+    width: 95%;
     }
     .table1 th tr {
     background-color: #009879;
-    color: #ffffff;
+    color: #000;
     text-align: left;
     }
     .table1 th,
