@@ -3,7 +3,7 @@
     "background_color": "#f69435",
     "display": "minimal-ui",
     "scope": "",
-    "start_url": "www.teamcsapp.com",
+    "start_url": "/",
     "name": "Cinematic Saviors Team Web App",
     "short_name": "TeamCS",
     "description": "Webapp for CS Team",
