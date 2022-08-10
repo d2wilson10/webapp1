@@ -1,3 +1,32 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@d2wilson10 
+d2wilson10
+/
+webapp1
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+webapp1/index.php /
+@d2wilson10
+d2wilson10 Update index.php
+Latest commit 4151595 4 days ago
+ History
+ 1 contributor
+84 lines (74 sloc)  1.75 KB
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -82,3 +111,18 @@ mysqli_close($con);
 
 </style>
 </html>
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+You have no unread notifications
