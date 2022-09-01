@@ -24,7 +24,14 @@
 </form>
 
   <!--Section 1-->
-
+<script src="//cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+<script>
+    axios.post('https://sheetdb.io/api/v1/hwwsoflp1o13r',{
+        "data": {"name": "Scott", "age": 25}
+    }).then( response => {
+        console.log(response.data);
+    });
+</script>
   <div class="row">
     <div class="col">
     <div class="card">
@@ -65,9 +72,8 @@
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
  <!-- chart.js jdeliver -->
- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="https://sheetdb.io/handlebars.js"></script>
-<script src="https://sheetdb.io/s/f/lvnrkidgsw5oo.js"></script>
 </body>
 <style>
   
